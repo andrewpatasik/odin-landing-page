@@ -1,2 +1,82 @@
-@import url('./reset.css');
+@import url("./reset.css");
+@import url("./roboto.css");
 
+body {
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #1f2937;
+  color: #f9faf8;
+  min-height: 75vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.links-container {
+  display: flex;
+  gap: 24px;
+}
+
+.hero {
+  display: flex;
+  margin: auto 0;
+  gap: 32px;
+  min-height: 35vh;
+}
+
+.hero-desc, .hero-image {
+  flex: 1;
+}
+
+.hero-desc h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero-desc p {
+  font-size: 18px; 
+  color: #e5e7eb;
+  font-weight: 300;
+  line-height: 1.25rem;
+  margin: 8px 0;
+}
+
+.hero-image {
+  border: 1px solid #000;
+  background-color: #fefefe;
+}
+
+.hero-button {
+  margin: 8px 0;
+  padding: 8px 32px;
+  background-color: #3882f6;
+  color: #e5e7eb;
+  border-radius: 8px;
+  border: 0;
+  font-weight: 700;
+}
+
+.hero-button:hover {
+  cursor: pointer;
+  opacity: 75%;
+}
