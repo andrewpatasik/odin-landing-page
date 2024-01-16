@@ -6,11 +6,9 @@ body {
 }
 
 header {
-  display: flex;
-  flex-direction: column;
   background-color: #1f2937;
   color: #f9faf8;
-  min-height: 75vh;
+  height: 75vh;
 }
 
 nav {
@@ -20,11 +18,16 @@ nav {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
   width: 75%;
+  height: 100%;
   margin: 0 auto;
+}
+
+.flex-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  margin: auto 0;
 }
 
 .logo {
@@ -44,7 +47,8 @@ nav {
   min-height: 35vh;
 }
 
-.hero-desc, .hero-image {
+.hero-desc,
+.hero-image {
   flex: 1;
 }
 
@@ -53,9 +57,9 @@ nav {
 }
 
 .hero-desc p {
-  font-size: 18px; 
+  font-size: 18px;
   color: #e5e7eb;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   margin: 8px 0;
 }
 
@@ -65,7 +69,6 @@ nav {
 }
 
 .hero-button {
-  margin: 8px 0;
   padding: 8px 32px;
   background-color: #3882f6;
   color: #e5e7eb;
@@ -81,9 +84,8 @@ nav {
 
 .features {
   padding: 3rem 0;
-  display: flex;
   margin: auto 0;
-  min-height: 35vh;
+  min-height: 40vh;
 }
 
 .features h1 {
@@ -92,26 +94,16 @@ nav {
 }
 
 .card-container {
-  width: 70%;
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
-  justify-content: center;
-  align-items: center;
-  padding: 2.5rem;
   flex-grow: 1;
+  gap: 32px;
   margin: 0 auto;
+  padding: 2.25rem 0;
 }
 
 .card {
-  flex: 0 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-
 }
 
 .card-img-placeholder {
@@ -124,4 +116,30 @@ nav {
 .card-text {
   width: 150px;
   line-height: 1.25rem;
+  margin: 8px 0;
+}
+
+.quotes {
+  background-color: #e5e7eb;
+  height: 40vh;
+}
+
+.quote-container {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 8px;
+}
+
+.quotes-text {
+  font-size: 2.25rem;
+  color: #1f2937;
+}
+
+.quotes-author {
+  font-size: 18px;
+  text-align: right;
 }
