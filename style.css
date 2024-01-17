@@ -107,6 +107,7 @@ nav {
 
 .card-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   flex-grow: 1;
   gap: 32px;
@@ -132,8 +133,11 @@ nav {
 }
 
 .quotes {
+  display: flex;
+  align-items: center;
+  padding: 40px;
   background-color: #e5e7eb;
-  height: 40vh;
+  min-height: 40vh;
 }
 
 .quote-container {
@@ -172,11 +176,13 @@ nav {
 .cta-section {
   display: flex;
   flex-grow: 1;
-  min-height: 150px;
+  flex-wrap: wrap;
+  min-height: 120px;
   justify-content: space-around;
   align-items: center;
   background-color: #3882f6;
   border-radius: 8px;
+  padding: 35px;
 }
 
 .cta-title {
