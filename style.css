@@ -1,6 +1,15 @@
 @import url("./reset.css");
 @import url("./roboto.css");
 
+/* link reset */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* end of link reset */
+
 body {
   min-height: 100vh;
 }
@@ -68,13 +77,16 @@ nav {
   background-color: #fefefe;
 }
 
-.hero-button {
+.button {
   padding: 8px 32px;
-  background-color: #3882f6;
   color: #e5e7eb;
   border-radius: 8px;
   border: 0;
   font-weight: 700;
+}
+
+.hero-button {
+  background-color: #3882f6;
 }
 
 .hero-button:hover {
@@ -137,9 +149,50 @@ nav {
 .quotes-text {
   font-size: 2.25rem;
   color: #1f2937;
+  line-height: 2.5rem;
 }
 
 .quotes-author {
   font-size: 18px;
   text-align: right;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  min-height: 40vh;
+  color: #e5e7eb;
+}
+
+.cta-container {
+  display: flex;
+  align-items: center;
+}
+
+.cta-section {
+  display: flex;
+  flex-grow: 1;
+  min-height: 150px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3882f6;
+  border-radius: 8px;
+}
+
+.cta-title {
+  font-size: 18px;
+}
+
+.cta-button {
+  background-color: transparent;
+  border: 3px solid #e5e7eb;
+}
+
+footer {
+  display: flex;
+  background-color: #1f2937;
+  min-height: 70px;
+  color: #e5e7eb;
+  justify-content: center;
+  align-items: center;
 }
