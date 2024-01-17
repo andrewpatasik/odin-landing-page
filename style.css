@@ -107,7 +107,8 @@ nav {
 
 .card-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 75%;
   flex-wrap: wrap;
   flex-grow: 1;
   gap: 32px;
@@ -140,7 +141,7 @@ nav {
   min-height: 40vh;
 }
 
-.quote-container {
+.quotes-container {
   width: 75%;
   height: 100%;
   display: flex;
@@ -177,7 +178,7 @@ nav {
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
-  min-height: 120px;
+  min-height: 100px;
   justify-content: space-around;
   align-items: center;
   background-color: #3882f6;
